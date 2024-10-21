@@ -1,7 +1,16 @@
-"use strict";
-const answers = [];
-answers[0] = prompt('как ваше имя?', '');
-answers[0] = prompt('как ваша фамилия?', '');  
-answers[0] = +prompt('каков ваш возвраст?', '');
-
-document.write(answers);
+'use strict';
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ''); 
+const personalMovieDb = {
+    count : numberOfFilms,
+    movies : {}, //{} - масив
+    actors : {},
+    genres : [], // [] - обьект
+    privat : false
+};
+const a = prompt('один из последнихз просмотреніх фильмов?',''),
+      b = prompt('на сколько оцените его?', ''),
+      c = prompt('один из последнихз просмотреніх фильмов?',''),
+      d = prompt('на сколько оцените его?', '');
+      personalMovieDb.movies[a] = b;
+      personalMovieDb.movies[c] = d;
+      console.log(personalMovieDb);
