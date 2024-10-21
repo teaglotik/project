@@ -9,6 +9,7 @@ const storeDescription = {
     products:{
         pc: 1000,
         gpu: 5000
-    },
+    }, 
     open: true ,
 };
+
